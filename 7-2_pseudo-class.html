@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селекторы псевдоклассов</title>
+<style type="text/css">
+div{
+ padding: 10px 50px;
+}
+/*:first-child :last-child :last-of-type :first-of-type*/
+
+p:first-child{
+ background: #ccf;
+}
+p:last-child{
+ background: #fcc; 
+}
+p:last-of-type{
+ color: #369
+}
+</style>
+</head>
+<body>
+	<p>Первый параграф в body</p>
+	<p>Второй параграф в body</p>
+	<div>
+		<p>Первый параграф в div</p>
+		<span>Первый span в div</span>
+		<p>Второй параграф в div</p>
+		<span>Второй span в div</span>
+	</div>
+	<p>Текст в параграфе</p>
+	<p>Последний параграф в body</p>
+</body>
+</html>
