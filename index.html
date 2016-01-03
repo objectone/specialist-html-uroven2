@@ -1,45 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Специалист Html уровень 2. Урок 1-1</title>
+	</head>
+	<style>
+		article{
+			background: #C1C1C1;
+			padding: 20px;
+			margin: 5px;
+			/*display: inline-block;
+		width: 30%;
+		height: 10%;*/
+		}
+		li{
+			list-style-position: inside;
+			float: left;
+		}
+	</style>
+	<body>
+		<div>
+			<ol>
+				<li>
+					<article>
+						<p><a href="https://code.google.com/p/zen-coding/">zen-coding</a></p>
+						<p><a href="http://docs.emmet.io/">Emmet Documentation</a></p>
+					</article>
+				</li>
+				<li>
+					<article>
+						<p>div>p>span</p>
+						<textarea name="" id="" cols="30" rows="10">
+						<div>
+							<p><span></span></p>
+						</div>
+						</textarea>
+					</article>
+				</li>
+				<li>
+					<article>
+						<p>nav>ul>li*5>a{$Ссылка}</p>
+						<textarea name="" id="" cols="30" rows="10">
+						<nav>
+							<ul>
+								<li><a href="">1Ссылка</a></li>
+								<li><a href="">2Ссылка</a></li>
+								<li><a href="">3Ссылка</a></li>
+								<li><a href="">4Ссылка</a></li>
+								<li><a href="">5Ссылка</a></li>
+							</ul>
+						</nav>
+						</textarea>
+					</article>
+				</li>
+				<li>
+					<article>
+						<p>h1>span{слово}+strong{дело}</p>
+						<textarea name="" id="" cols="30" rows="10">
+<h1><span>слово</span><strong>дело</strong></h1>
+						</textarea>
+					</article>
+				</li>
+				<li>
+					<article>
+<p>html:5>div#wrapper>(header>((a>img)+h1))+(nav>ul.menuLeft>li>a{ссылка$})+(article>p*4>{текст})+(div#banner)+(footer)</p>
+						<textarea name="" id="" cols="30" rows="10">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Специалист Html уровень 2. Урок 1-1</title>
+	<title>Document</title>
 </head>
-<style>
-	article{
-		background: #C1C1C1;
-		padding: 20px;
-		/*display: inline-block;
-	    width: 30%;
-	    height: 10%;*/
-	}
-
-	li{
-		list-style-position: inside;
-	    float: left;
-	}
-</style>
 <body>
-	<div>
-		<ol>
-			<li>
-				<article>
-					<h2>Первый документ</h2>
-					<p><a href="https://code.google.com/p/zen-coding/">zen-coding</a></p>
-					<p><a href="http://docs.emmet.io/">Emmet Documentation</a></p>
-				</article>
-			</li>
-			<li>
-				<article>
-					<h2></h2>
-					<p>div>p>span</p>
-					<textarea name="" id="" cols="30" rows="10">
-							<div>
-								<p><span></span></p>
-							</div>
-					</textarea>
-				</article>
-			</li>
-		</ol>
+	<div id="wrapper">
+		<header>
+			<a href=""><img src="" alt=""></a>
+			<h1></h1>
+		</header>
+		<nav>
+			<ul class="menuLeft">
+				<li><a href="">ссылка1</a></li>
+			</ul>
+		</nav>
+		<article>
+			<p>текст</p>
+			<p>текст</p>
+			<p>текст</p>
+			<p>текст</p>
+		</article>
+		<div id="banner"></div>
+		<footer></footer>
 	</div>
 </body>
+</html>
+						</textarea>
+					</article>
+				</li>
+			</ol>
+		</div>
+	</body>
 </html>
