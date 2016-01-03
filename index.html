@@ -20,12 +20,24 @@
 			list-style-position: inside;
 			/*float: left;*/
 		}
-		[title|="слово"]{
-			color: green;
+		/**/
+		a:hover{
+			background: red;
+			font: 100em Arial,sans-serif;
+			transition:1s;
 		}
-		a:link{color:green;} 
-		a:visited{color:orange;} 
-		a:active{color:lime;}
+
+		p:first-letter{
+			background: green;
+		}
+
+		p:first-line{
+			background: grey;
+		}
+
+		p:before{
+			content:"Тут слово из бефора";
+		}
 	</style>
 	<body>
 		<div>
@@ -34,10 +46,7 @@
 			<ol>
 				<li>
 					<article>
-						<br>a:link{color:green;}
-						<br>a:visited{color:orange;}
-						<br>a:active{color:lime;}
-						<p>у посещённой ссылки ничего кроме цвета не меняется</p>
+						<p>у посещённой ссылки ничего кроме цвета не меняетсяу, посещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняется</p>
 					</article>
 				</li>
 				<li>
@@ -48,53 +57,6 @@
 	color: green;
 }
 						</textarea>
-					</article>
-				</li>
-				<li>
-					<article>
-						<nav>
-<style>
-a {
-    display: block;
-    width: 40px;
-    height: 50px;
-}
-[href]{
-	background: url(sprite.png) no-repeat;
-	padding-left: 20px;
-	margin-right: 5px;
-}
-	[href$="txt"]{
-		background-position: -74px -78px;
-		transition: 1s;
-	}
-	[href$="txt"]:hover{
-		background-position: -74px -20px;
-		transition: 1s;
-	}
-
-
-	[href$="xml"]{
-		background-position: -14px -79px;
-		transition: 1s;
-	}
-	[href$="xml"]:hover{
-		background-position: -14px -21px;
-		transition: 1s;
-	}
-	ul {
-	    list-style-type: none;
-	}
-</style>
-							<ul>
-								<li><a href="her.txt"></a></li>
-								<li><a href="fig.xml">2Ссылка</a></li>
-								<li><a href="dir.txt">3Ссылка</a></li>
-								<li><a href="">4Ссылка</a></li>
-								<li><a href="">5Ссылка</a></li>
-							</ul>
-						</nav>
-						
 					</article>
 				</li>
 			</ol>
