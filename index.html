@@ -20,40 +20,81 @@
 			list-style-position: inside;
 			/*float: left;*/
 		}
+		[title|="слово"]{
+			color: green;
+		}
+		a:link{color:green;} 
+		a:visited{color:orange;} 
+		a:active{color:lime;}
 	</style>
 	<body>
 		<div>
+		<h1>css селекторы</h1>
+		<p><a href="http://htmlbook.ru/css/selector/attr7">Селекторы атрибутов</a></p>
 			<ol>
 				<li>
 					<article>
-						<p><a href="https://code.google.com/p/zen-coding/">zen-coding</a></p>
-						<p><a href="http://docs.emmet.io/">Emmet Documentation</a></p>
+						<br>a:link{color:green;}
+						<br>a:visited{color:orange;}
+						<br>a:active{color:lime;}
+						<p>у посещённой ссылки ничего кроме цвета не меняется</p>
 					</article>
 				</li>
 				<li>
 					<article>
-						<p>div>p>span</p>
+						<p title="слово">Тут слово</p>
 						<textarea name="" id="" cols="30" rows="10">
-						<div>
-							<p><span></span></p>
-						</div>
+[title|="слово"]{
+	color: green;
+}
 						</textarea>
 					</article>
 				</li>
 				<li>
 					<article>
-						<p>nav>ul>li*5>a{$Ссылка}</p>
-						<textarea name="" id="" cols="30" rows="10">
 						<nav>
+<style>
+a {
+    display: block;
+    width: 40px;
+    height: 50px;
+}
+[href]{
+	background: url(sprite.png) no-repeat;
+	padding-left: 20px;
+	margin-right: 5px;
+}
+	[href$="txt"]{
+		background-position: -74px -78px;
+		transition: 1s;
+	}
+	[href$="txt"]:hover{
+		background-position: -74px -20px;
+		transition: 1s;
+	}
+
+
+	[href$="xml"]{
+		background-position: -14px -79px;
+		transition: 1s;
+	}
+	[href$="xml"]:hover{
+		background-position: -14px -21px;
+		transition: 1s;
+	}
+	ul {
+	    list-style-type: none;
+	}
+</style>
 							<ul>
-								<li><a href="">1Ссылка</a></li>
-								<li><a href="">2Ссылка</a></li>
-								<li><a href="">3Ссылка</a></li>
+								<li><a href="her.txt"></a></li>
+								<li><a href="fig.xml">2Ссылка</a></li>
+								<li><a href="dir.txt">3Ссылка</a></li>
 								<li><a href="">4Ссылка</a></li>
 								<li><a href="">5Ссылка</a></li>
 							</ul>
 						</nav>
-						</textarea>
+						
 					</article>
 				</li>
 			</ol>
