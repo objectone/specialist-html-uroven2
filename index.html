@@ -5,127 +5,42 @@
 		<title>Специалист Html уровень 2. Урок 1-1</title>
 	</head>
 	<style>
-		article{
-			background: #C1C1C1;
-			padding: 20px;
-			margin: 5px;
-			/*display: inline-block;
-		width: 30%;
-		height: 10%;*/
+		/*.statiiSpisok li - Когда ставил с пробелом был доступен интересный эффект в списке который вложен во внутренний список. Как в тетрадке прям Но мне нужно было что бы только вложенные li имели стиль */
+		.statiiSpisok>li{
+			padding: 10px;
+			border-bottom: 1px solid #B7B7B7;
+			margin-bottom: 20px;
+			min-height: 300px; /* Хорош тем что даёт пространство для манёвра глоток воздуха на этой страничке */
 		}
-		ol{
-		padding-left: 0px;
-		}
-		li{
-			list-style-position: inside;
-			/*float: left;*/
-		}
-		/**/
-		a:hover{
-			background: red;
-			font: 110% Arial,sans-serif;
-			transition:1s;
-		}
-		p:first-letter{
-			background: green;
-		}
-		p:first-line{
-			background: grey;
-		}
-		p:before{
-			content:"Тут слово из бефора";
-		}
-	p:first-child{ /* все первые дети каждого блока поменяли цвет */
-	background: #ccf;
-	}
 	</style>
 	<body>
-		<p>параграфы внутри боди</p>
-		<p>параграфы внутри боди</p>
-		<div>
-			<h1>css селекторы</h1>
-			<p><a href="http://htmlbook.ru/css/selector/attr7">Селекторы атрибутов</a></p>
-			<p>параграфы внутри дива</p>
-			<p>параграфы внутри дива</p>
-			<ol>
+		<div class="wrapper">
+			<ol class="statiiSpisok">
 				<li>
-					<article>
-						<p>параграфы внутри артикл</p>
-						<p>параграфы внутри артикл</p>
-						<p>у посещённой ссылки ничего кроме цвета не меняетсяу, посещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняетсяпосещённой ссылки ничего кроме цвета не меняется</p>
-					</article>
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe fugiat provident id aut, minus eaque eos! Quia laboriosam molestias earum rem! Mollitia nemo dolore laboriosam inventore, quis expedita, commodi impedit reiciendis in est assumenda omnis iusto ipsa facere non, vitae pariatur. Eos velit perspiciatis hic mollitia aspernatur, id iste.</p>
+					<ol>
+						<li>lorem</li>
+						<li>lorem</li>
+						<li>lorem</li>
+						<li>lorem</li>
+					</ol>
 				</li>
 				<li>
-					<article>
-						<style>
-							div:empty{
-								background-color: #b4da55;
-								width: 100px;
-						height: 100px;
-							}
-							div:target{
-								background: #cff;
-							}
-							:enabled{
-								color: #080;
-							}
-							:disabled{
-								color: #f00;
-							}
-						</style>
-						<div></div>
-						<p><a href="http://htmlbook.ru/css/empty">Псевдокласс :empty</a></p>
-					</article>
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe fugiat provident id aut, minus eaque eos! Quia laboriosam molestias earum rem! Mollitia nemo dolore laboriosam inventore, quis expedita, commodi impedit reiciendis in est assumenda omnis iusto ipsa facere non, vitae pariatur. Eos velit perspiciatis hic mollitia aspernatur, id iste.</p>
 				</li>
 				<li>
-					<article>
-						<p><a href="http://www.w3.org/TR/css3-selectors/">http://www.w3.org/TR/selectors/</a></p>
-					</article>
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe fugiat provident id aut, minus eaque eos! Quia laboriosam molestias earum rem! Mollitia nemo dolore laboriosam inventore, quis expedita, commodi impedit reiciendis in est assumenda omnis iusto ipsa facere non, vitae pariatur. Eos velit perspiciatis hic mollitia aspernatur, id iste.</p>
 				</li>
 				<li>
-<style>div#span.p>span.p#div em{color:red;}</style>
-					<p>div#span.p>span.p#div em{color:red;}</p>
-					<p>div#span.p>span.p#div>em -> tab</p>
-					<div id="span" class="p">
-						<span class="p" id="div">
-							<em>div#span.p>span.p#div>em -> tab</em>
-						</span>
-					</div>
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe fugiat provident id aut, minus eaque eos! Quia laboriosam molestias earum rem! Mollitia nemo dolore laboriosam inventore, quis expedita, commodi impedit reiciendis in est assumenda omnis iusto ipsa facere non, vitae pariatur. Eos velit perspiciatis hic mollitia aspernatur, id iste.</p>
 				</li>
 				<li>
-<style>
-	.layer {
-		overflow: scroll; /* Добавляем полосы прокрутки */
-		width: 300px; /* Ширина блока */
-		height: 150px; /* Высота блока */
-		padding: 5px; /* Поля вокруг текста */
-		border: solid 1px black; /* Параметры рамки */
-
-		    /*overflow: scroll;
-			width: 200px;
-			height: 150px;
-			padding: 5px;
-			border: solid 1px black;
-			position: fixed;
-			top: 10%;
-			background: aliceblue;*/
-	}
-</style>
-<p><a href="http://htmlbook.ru/css/overflow">overflow</a></p>
-<div class="layer">
-   <h2>Duis te feugifacilisi</h2>
-   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem 
-    nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
-    Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit 
-    lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <ul>
-    	<li><a href="#">Lorem ipsum dolor.</a></li>
-    	<li><a href="#">Lorem ipsum dolor.</a></li>
-    	<li><a href="#">Lorem ipsum dolor.</a></li>
-    	<li><a href="#">Lorem ipsum dolor.</a></li>
-    	<li><a href="#">Lorem ipsum dolor.</a></li>
-    </ul>
-  </div> 
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe fugiat provident id aut, minus eaque eos! Quia laboriosam molestias earum rem! Mollitia nemo dolore laboriosam inventore, quis expedita, commodi impedit reiciendis in est assumenda omnis iusto ipsa facere non, vitae pariatur. Eos velit perspiciatis hic mollitia aspernatur, id iste.</p>
 				</li>
 			</ol>
 		</div>
