@@ -5,26 +5,29 @@
 		<title>Специалист Html уровень 2. Урок 1-1</title>
 	</head>
 	<style>
-		/*.statiiSpisok li - Когда ставил с пробелом был доступен интересный эффект в списке который вложен во внутренний список. Как в тетрадке прям Но мне нужно было что бы только вложенные li имели стиль */
-		.statiiSpisok>li{
-			padding: 10px;
-			border-bottom: 1px solid #B7B7B7;
-			margin-bottom: 20px;
-			min-height: 300px; /* Хорош тем что даёт пространство для манёвра глоток воздуха на этой страничке */
-		}
+
 	</style>
 	<body>
 		<div class="wrapper">
 			<ol class="statiiSpisok">
-			<p>Походу тут чисто теоретическая часть, немного практической было в начале</p>
 				<li>
+<style>
+	span{
+		background: #FF9191;
+		transition: 1s;
+		padding: 5px;
+	}
+	p span:hover{
+		background: #9DFF91;
+		/*display: block;*/
+		/*height: 150%;*/
+		padding: 20px;
+	}
+</style>
 					<h2>Стандарты</h2>
-					<p>Все символы юникода <a href="http://www.unicode.org/charts/">Unicode 8.0 Character Code Charts</a></p>
+					<p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.</p>
+					<p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.</p>
 				</li>
-				<!-- <li>
-					<h2>Заголовок</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe fugiat provident id aut, minus eaque eos! Quia laboriosam molestias earum rem! Mollitia nemo dolore laboriosam inventore, quis expedita, commodi impedit reiciendis in est assumenda omnis iusto ipsa facere non, vitae pariatur. Eos velit perspiciatis hic mollitia aspernatur, id iste.</p>
-				</li> -->
 			</ol>
 		</div>
 	</body>
