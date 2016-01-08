@@ -8,29 +8,21 @@
 
 	</style>
 	<body>
-		<div class="wrapper">
-			<ol class="statiiSpisok">
-				<li>
 <style>
-	span{
-		background: #FF9191;
-		transition: 1s;
-		padding: 5px;
+	#first{
+		padding: 100px;
+		background: #69c;
+		margin-bottom: 100px;
+		margin-left: 10px; /* пиксели суммируються т.к. у body тоже есть margin */
 	}
-	p span:hover{
-		background: #9DFF91;
-		/*display: block;*/
-		/*height: 150%;*/
-		padding: 20px;
+	#second{
+		margin-top: 100px;
+		height: 200px;
+		background: #f60;
 	}
-
 </style>
-					<h2>инлайновые и блочные элементы</h2>
-					<p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.</p>
-					<p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed, reprehenderit.<span class="testSpan">Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit amet.</p>
-
-				</li>
-			</ol>
-		</div>
+	<p>Маржин коллапс, схлопование по маржину.</p>
+	<div id="first">first</div>
+	<div id="second">second</div>
 	</body>
 </html>
