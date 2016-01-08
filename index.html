@@ -9,20 +9,34 @@
 	</style>
 	<body>
 <style>
-	#first{
-		padding: 100px;
-		background: #69c;
-		margin-bottom: 100px;
-		margin-left: 10px; /* пиксели суммируються т.к. у body тоже есть margin */
+	#out{
+		background: #f63;
+		/*height: 300px;*/
+		/*padding: 80px;*/
+		overflow: hidden;
 	}
-	#second{
-		margin-top: 100px;
-		height: 200px;
-		background: #f60;
+	#in{
+		padding: 100px;
+		margin: 300px;
+		background: #369;
 	}
 </style>
-	<p>Маржин коллапс, схлопование по маржину.</p>
-	<div id="first">first</div>
-	<div id="second">second</div>
+<p>Ещё один мерж эффект. Мерджин от одного элемента переходит к родительскому элементу.</p>
+	<div id="out">out
+		<div id="in">in</div>
+	</div>
+<hr><br>
+
+<p>Стили для старых експлореров</p>
+<!--[if lte IE 7]>
+<style>
+#out{
+	width: 100px;
+	height: 100px;
+	background: olive;
+}
+</style>
+
+<![endif]-->
 	</body>
 </html>
